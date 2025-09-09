@@ -8,6 +8,11 @@
         "pid": "0x0287",
         "device_version": "1.0.0"
     },
+    "encoder": {
+        "rotary": [
+          { "pin_a": "GP29", "pin_b": "GP28", "resolution": 4 }
+        ]
+      },
     "layouts": {
         "LAYOUT": {
             "layout": [

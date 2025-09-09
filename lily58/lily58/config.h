@@ -26,10 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-#define ENCODERS_PAD_A { GP29 }
-#define ENCODERS_PAD_B { GP28 }
-#define ENCODERS_PAD_A_RIGHT { GP28 }
-#define ENCODERS_PAD_B_RIGHT { GP29 }
+/* 
+encoder support was moved to info.json since it seems to be deprecated way to define encoders
+*/
+// #define ENCODERS_PAD_A { GP29 }
+// #define ENCODERS_PAD_B { GP28 }
+// #define ENCODERS_PAD_A_RIGHT { GP28 }
+// #define ENCODERS_PAD_B_RIGHT { GP29 }
 
 #define MASTER_LEFT
 #define USB_VBUS_PIN      GP19
@@ -40,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define SPLIT_TRANSPORT_MIRROR
     #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
     #define RGB_MATRIX_KEYPRESSES
-    #define RGB_DISABLE_WHEN_USB_SUSPENDED 
+    #define RGB_MATRIX_SLEEP // turn off effects when suspended
     #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT
 
     #define ENABLE_RGB_MATRIX_ALPHAS_MODS         // Static dual hue, speed is hue for secondary hue

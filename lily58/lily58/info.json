@@ -7,7 +7,12 @@
         "vid": "0x04D8",
         "pid": "0xEB2D",
         "device_version": "1.0.0"
-    },
+    },    
+    "encoder": {
+        "rotary": [
+          { "pin_a": "GP28", "pin_b": "GP29", "resolution": 4 }
+        ]
+      },
     "features": {
         "oled": true
     },

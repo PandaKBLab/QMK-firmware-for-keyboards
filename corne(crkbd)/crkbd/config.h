@@ -23,6 +23,8 @@
  * Feature disable options
  *  These options are also useful to firmware size reduction.
  */
+
+
 //#define MASTER_RIGHT
 #define SPLIT_HAND_PIN GP21
 #define	SPLIT_HAND_PIN_LOW_IS_LEFT
@@ -37,20 +39,18 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 1000U
 
 #ifdef OLED_ENABLE
-// settings for the oled keyboard demo with Adafruit 0.91" OLED display on the Stemma QT port
-    #define OLED_DISPLAY_128X32
-    #define I2C_DRIVER I2CD1
-    #define I2C1_SDA_PIN GP2
-    #define I2C1_SCL_PIN GP3
-    #define OLED_BRIGHTNESS 180
-    #define OLED_TIMEOUT 60000
-    #define OLED_FONT_H "lib/glcdfont.c"
-    // #define WPM_ESTIMATED_WORD_SIZE 5
-    #define SPLIT_LAYER_STATE_ENABLE
-    #define SPLIT_LED_STATE_ENABLE
-    #define SPLIT_MODS_ENABLE
-    #define SPLIT_WPM_ENABLE
-    // #define SPLIT_OLED_ENABLE              // 不要打开 打开之后副手OLED就不亮了
+#   define OLED_DISPLAY_128X32
+#   define I2C_DRIVER I2CD1
+#   define I2C1_SDA_PIN GP2
+#   define I2C1_SCL_PIN GP3
+#   define OLED_BRIGHTNESS 180
+#   define OLED_TIMEOUT 60000
+#   define SPLIT_LAYER_STATE_ENABLE
+#   define SPLIT_LED_STATE_ENABLE
+#   define SPLIT_MODS_ENABLE
+#   define SPLIT_OLED_ENABLE
+#   define SPLIT_WPM_ENABLE
+#   define OLED_FONT_H "keymaps/vial/glcdfont.c"
 #endif
 
 #ifdef RGB_MATRIX_ENABLE
